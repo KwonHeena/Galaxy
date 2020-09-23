@@ -24,6 +24,7 @@ html,body{
 }
 .sub-text{
     font-size: 30px;
+    color: #b5b5b5;
 }
 .bar{
     width: 0.5px;
@@ -34,10 +35,16 @@ html,body{
     top: 10px;
 }
 .red{
-    color: #990000;
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+    /* color: #990000; */
 }
 .blue{
-    color: #003399;
+    /* color: #003399; */
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
 }
 .more-text{
     width: 100px;
