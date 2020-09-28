@@ -246,6 +246,87 @@ html,body{
     line-height:48px;
     font-size:30px;
 }
+
+#section04{
+    width: 100%;
+    height: auto;
+    background:#fff;
+    padding-bottom: 5%;
+}
+.sec04-text{
+    font-weight: bold;
+    font-size: 45px;
+    padding-top: 50px;
+    line-height: 55px;
+}
+.sec04-sub-text{
+    font-size: 18px;
+    color: #333;
+    padding-bottom: 30px;
+}
+.sec04-left{
+    display: flex;
+    flex-direction: column;
+}
+.sec04-right{
+    display: flex;
+    flex-direction: column;
+}
+.watch{
+    width: 350px;
+    padding-top: 50px;
+}
+.map{
+    width: 150px;
+    position: relative;
+    left: 380px;
+    animation: icon 3s infinite;
+}
+.t{
+    width: 150px;
+    position: relative;
+    left: 300px;
+    top: 350px;
+    animation: icon 3s infinite;
+}
+.melon{
+    width: 130px;
+    position: relative;
+    left: 150px;
+    bottom: 50px;
+    animation: icon 3s infinite;
+}
+.a{
+    width: 130px;
+    position: relative;
+    top: 50px;
+    animation: icon 3s infinite;
+}
+.wear{
+    width: 150px;
+    position: relative;
+    top: 130px;
+    left: 200px;
+    animation: icon 3s infinite;
+}
+.gini{
+    width: 150px;
+    position: relative;
+    top: 220px;
+    animation: icon 3s infinite;
+}
+@keyframes icon
+
+{
+
+0%{transform:translateY(10px);}
+
+50%{transform:translateY(-20px);}
+
+100%{transform:translateY(10px);}
+
+}
+
 @media(max-width: 767px){
     .sec02-text{
         font-size: 35px;
@@ -265,4 +346,55 @@ html,body{
     .daily-img{
         width: 100%;
     }
+    .watch{
+        width: 220px;
+    }
+    .map{
+        width: 60px;
+        position: relative;
+        left: 40px;
+        top: 250px;
+        animation: icon 3s infinite;
+    }
+    .t{
+        width: 60px;
+        position: relative;
+        left: 50px;
+        top: 500px;
+        animation: icon 3s infinite;
+    }
+    .melon{
+        width: 60px;
+        position: relative;
+        left: 0px;
+        bottom: 0px;
+        top: 250px;
+        animation: icon 3s infinite;
+    }
+    .a{
+        width: 60px;
+        position: relative;
+        top: -380px;
+        left: 310px;
+        animation: icon 3s infinite;
+    }
+    .wear{
+        width: 60px;
+        position: relative;
+        top: -300px;
+        left: 350px;
+        animation: icon 3s infinite;
+    }
+    .gini{
+        width: 60px;
+        position: relative;
+        top: -200px;
+        left: 320px;
+        animation: icon 3s infinite;
+    }
+    .sec04-content{
+        position: relative;
+
+    }
+   
 }
