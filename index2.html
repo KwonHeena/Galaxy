@@ -11,8 +11,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!-- aos css -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <!-- css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
 </head>
 <body>
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -27,9 +29,9 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#section01">메인</a></li>
                     <li><a href="#section02">기능</a></li>
-                    <li><a href="#section03">스펙</a></li>
-                    <li><a href="#section04">고객지원</a></li>
+                    <li><a href="#section04">구매</a></li>
                 </ul>
             </div>
         </div>
@@ -79,28 +81,46 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="container-fluid">
-            <div class="row sec02-water">
-                <div class="col-sm-8">
-                    <img src="images/water.webp" alt="" class="water">
+        <hr>
+        <div class="container-fluid">
+            <div class="row sec02-sub-content text-left" data-aos="fade-right" data-aos-duration="2000">
+                <div class="col-sm-6">
+                    <img src="images/well.jpg" alt="" class="well">
                 </div>
-                <div class="col-sm-4 sec02-sub-text">
-                    <h2>방수와 충격에 강한 내구성</h2>
-                    <p>갤럭시 워치는 방수5ATM, 방진IP6X 등급을 지원합니다. <br>※ 갤럭시 워치는 통제된 환경에서 테스트되었으며,<br>특정한 상황과 조건에서 방수/방진됩니다.</p>
+                <div class="col-sm-6 align">
+                    <h2>손목 위에서 혈압을 측정하고 관리하세요</h2>
+                    <p class="sec02-txt">식약처허가를 받은 '삼성 헬스 모니터' 앱을 갤럭시 워치3에서 이용하세요.<br>
+                    커프형 혈압계로 기준 혈압을 측정해 갤럭시 워치3에 입력하면 심박 센서를 활용하여<br>
+                    혈압을 측정할 수 있습니다. 워치3에서 측정한 맥박 파형을 기준 혈압과 비교 분석해<br>
+                    혈압 및 맥박수도 알려주죠. 게다가 혈압 데이터는 앱에 자동 저장돼 꾸준한 혈압 관리가 가능합니다.
+                    </p>
+                </div>
+            </div>
+            <div class="row sec02-sub-content text-right flex"  data-aos="fade-left" data-aos-duration="2000">
+                <div class="col-md-6 align">
+                    <h2>추락이나 넘어짐을 감지해 도움을 요청합니다.</h2>
+                    <p class="sec02-txt">등산이나 작업 중에 낙상 사고를 당하면 1분1초가 골든타임이죠.<br>
+                    갤럭시 워치3에 내장된 가속도 센서는 추락 상황을 스스로 감지해 낙상 사고 발생 시<br>
+                    긴급 연락처로 위치와 구초 요청 메시지를 자동 전송합니다.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/help.jpg" alt="" class="help">
+                </div>
+            </div>
+            <div class="row sec02-sub-content text-left"  data-aos="fade-right" data-aos-duration="3000">
+                <div class="col-md-6">
+                    <img src="images/sleep.jpg" alt="" class="sleep">
+                </div>
+                <div class="col-md-6 align">
+                    <h2>밤마다 꿀잠 자는 비결</h2>
+                    <p class="sec02-txt">오래 자도 피곤하다면 갤럭시 워치3로 원인을 파악해보세요. 수면 관리 기능이 렘주기,<br>
+                    깊은 수면, 얕은 수면 등 수면 상태를 정밀하게 측정해 올바른 수면 방법을 제시합니다.<br>
+                    미국수면재단(NSF)에서 권장한 수면 교육 콘텐츠와 수면 팁을 워치에 탑재해<br>언제든 찾아볼 수 있죠
+                    </p>
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="row sec02-gps">
-                <div class="col-sm-4 sec02-sub-text text-right">
-                    <h2>더 정확히 길을 찾는 GPS 탑재</h2>
-                    <p>갤럭시 워치에는 GPS가 내장되어 있어<br>당신의 위치를 확인하고 목적지까지 가는 길을 찾아줍니다.<br>고도계와 기압계까지 제공합니다.</p>
-                </div>
-                <div class="col-sm-8">
-                    <img src="images/gps.jpg" alt="" class="gps">
-                </div>
-            </div>
-        </div> -->
     </section>
     <!-- section02 end-->
     <section id="section03">
@@ -108,7 +128,7 @@
             <div class="row">
                 <h1 class="sec03-text text-center">라이프 스타일 최적화 "데일리브리핑"</h1>
                 <p class="sec02-subtext text-center">설레는 일정으로 가득 찬 나의 하루를 확인하세요.</p></div>
-                <div class="col-sm-4"><p class="memo" data-aos="fade-right" data-aos-duration="2000">- 외출 전 날씨 확인!<br>
+                <div class="col-sm-5"><p class="memo" data-aos="fade-right" data-aos-duration="2000">- 외출 전 날씨 확인!<br>
                     - 오늘 하루 일정 확인!<br>
                     - 하루 마감 전 운동량 확인!</p>
                 </div>
@@ -126,28 +146,49 @@
     </section>
     <!-- section03 end-->
     <section id="section04">
-        <div class="container-fluid">
-            <div class="row sec04-content">
-                <h1 class="sec04-text text-center">나를 위한 수많은 어플리케이션</h1>
-                <p class="text-center sec04-sub-text">갤럭시 워치를 위한 수많은 전용 앱이 준비되어 있습니다.<br>
-                    필요한 앱을 찾아서 설치하여 스마트한 삶을 누릴 수 있고,<br>
-                    홈 IoT기능으로 집 안의 TV, 로봇 청소기, 에어컨 등의<br>기기를 갤럭시 워치 하나로, 쉽게 컨트롤할 수 있습니다. 진정한 IoT 환경을 구축하세요.</p>
-                <div class="col-sm-4 sec04-left">
-                    <img src="images/map.jpg" alt="" class="map">
-                    <img src="images/t.png" alt="" class="t">
-                    <img src="images/melon.png" alt="" class="melon">
+        <div class="container">
+            <h1 class="sec04-text text-center">더 많은 갤럭시 워치3를 만나보세요!</h1>  
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+          
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner text-center">
+                <div class="item active">
+                  <img src="images/img1.jpg" alt="" style="width:100%;">
                 </div>
-                <div class="col-sm-4 text-center">
-                    <img src="images/watch.png" alt="" class="watch">
+          
+                <div class="item">
+                  <img src="images/img2.jpg" alt="" style="width:100%;">
                 </div>
-                <div class="col-sm-4 sec04-right">
-                    <img src="images/a.jpg" alt="" class="a">
-                    <img src="images/wear.png" alt="" class="wear">
-                    <img src="images/gini.png" alt="" class="gini">
+              
+                <div class="item">
+                  <img src="images/img3.jpg" alt="" style="width:100%;">
                 </div>
+              </div>
+          
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
+            <div class="col-sm-12 text-center"><a href="https://www.samsung.com/sec/eventList/galaxy_watch3_launching/" target="_blank"><button>구매하러가기</button></a></div>
         </div>
     </section>
+    <script>
+    $('.carousel').carousel({ 
+        interval: 2000
+    }); //기본 5초 })
+    </script>
     
    <script>
        $(document).ready(function(){
@@ -231,14 +272,6 @@ function drags(dragElement, resizeElement, container) {
 
 
     </script>
-    <section id="section04">
-
-    </section>
-    <!-- section04 end-->
-    <section id="section05">
-
-    </section>
-    <!-- section05 end-->
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
